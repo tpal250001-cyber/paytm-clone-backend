@@ -5,7 +5,7 @@ const Cors = require("cors")
 require("dotenv").config()
 
 const app = express()
-app.use(Cors({ origin: ["https://paytm-clone-frontend-eight.vercel.app/","http://localhost:5173"],
+app.use(Cors({ origin: ["https://paytm-clone-frontend-eight.vercel.app","http://localhost:5173"],
     credentials:true
 }))
 app.use(express.json())
