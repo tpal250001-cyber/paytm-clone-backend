@@ -15,4 +15,4 @@ app.use(express.json())
 app.use('/api/auth/v1',AuthRoutes)
 
 
-app.listen(process.env.PORT)
+app.listen(process.env.PORT || 3000)

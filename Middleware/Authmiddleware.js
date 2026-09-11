@@ -17,7 +17,7 @@ require('dotenv').config()
   }
 try{
   console.log("token accept")
-const decodeddata = jwt.verify(token,JWT_SECRET)
+const decodeddata = jwt.verify(token,process.env.JWT_SECRET)
 console.log(decodeddata.id)
  if(decodeddata.id){
 console.log(req.user,"nothind")
